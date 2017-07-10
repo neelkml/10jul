@@ -62,11 +62,16 @@ public static void printWithHello(int a)
 	.filter(value->value%2==0)
 	.filter(value->value>3)
 	.forEach(System.out::println);*/
-	System.out.println(list.stream()
+	/*System.out.println(list.stream()
 	.filter(value->value%2==0)
 	.filter(value->value>3)
 	.mapToInt(value->value)
-	.sum());
+	.sum());*/
+	System.out.println(list.stream()
+			.filter(value->value%2==0)
+			.filter(value->value>3)
+			.mapToDouble(value->value *1.5)
+			.sum());
 }
 	public static  void printWithHello(int a)
 	{
