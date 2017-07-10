@@ -28,6 +28,12 @@ public static void main(String args[])
 	}); */
 	//list.forEach((Integer t)->System.out.println(t));
 	//list.forEach(( t)->System.out.println(t));
-	list.forEach(System.out::println); //method reference
+	//list.forEach(System.out::println); //method reference
+    //list.forEach(String::valueOf);  
+	list.forEach(LambdaSimple::printWithHello);
+}
+public static void printWithHello(int a)
+{
+	System.out.println("Hello"+a);
 }
 }
