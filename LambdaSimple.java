@@ -27,6 +27,7 @@ public static void main(String args[])
 	
 	}); */
 	//list.forEach((Integer t)->System.out.println(t));
-	list.forEach(( t)->System.out.println(t));
+	//list.forEach(( t)->System.out.println(t));
+	list.forEach(System.out::println);
 }
 }
