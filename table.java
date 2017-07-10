@@ -37,12 +37,12 @@ class Mythread1 extends Thread
 		public void run() {
 			t.printTable(100);
 		}
-	public class TestSync
+  class TestSync
 	{
-		public void main(String args[]) {
+		public  void main(String args[]) {
 			table obj=new table();
-			Mythread1 t1=new Mythread1(obj);
-			Mythread2 t2=new Mythread2(obj);
+			Mythread1 t1=new Mythread1((obj));
+			Mythread2 t2=new Mythread2((obj));
 			t1.start();
 			t2.start();
 		}
