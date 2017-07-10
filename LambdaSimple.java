@@ -36,7 +36,8 @@ public static void printWithHello(int a)
 {
 	System.out.println("Hello"+a);
 } */
-	list.forEach(t -> {
+	
+	/*list.forEach(t -> {
 		try {
 			printWithHello(t);
 		} catch (InterruptedException e) {
@@ -49,5 +50,22 @@ public static void printWithHello(int a)
 	{
 		Thread.sleep(200);
 		System.out.println("Hello"+a);
+}*/
+	/*Timit.code(()->{
+		list.forEach(LambdaSimple::printWithHello);
+	}
+	);*/
+	list.stream()
+	.map(String::valueOf)
+	.forEach(System.out::println);
 }
+	public static  void printWithHello(int a)
+	{
+		try {
+			Thread.sleep(350);
+		}catch(InterruptedException e) {
+		System.out.println("Hello"+a);
 }
+	}
+}
+
