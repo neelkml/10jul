@@ -34,7 +34,7 @@ public class SumThreadArray extends Thread{
 		ts1[i1].join();
 		ans+=ts1[i1].ans;
 	}
-	return ans;
+	
 	}
 	return ans;
 	}
