@@ -30,10 +30,24 @@ public static void main(String args[])
 	//list.forEach(( t)->System.out.println(t));
 	//list.forEach(System.out::println); //method reference
     //list.forEach(String::valueOf);  
-	list.forEach(LambdaSimple::printWithHello);
+	/*list.forEach(LambdaSimple::printWithHello);
 }
 public static void printWithHello(int a)
 {
 	System.out.println("Hello"+a);
+} */
+	list.forEach(t -> {
+		try {
+			printWithHello(t);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	});
+	}
+	public static void printWithHello(int a) throws InterruptedException
+	{
+		Thread.sleep(200);
+		System.out.println("Hello"+a);
 }
 }
