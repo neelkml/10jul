@@ -18,13 +18,14 @@ public static void main(String args[])
 	});
 
 	t.start(); */
-	list.forEach(new Consumer<Integer>(){
+	/*list.forEach(new Consumer<Integer>(){
 		@Override
 		public void accept(Integer t) {
 			// TODO Auto-generated method stub
 			System.out.println(t);
 		}
 	
-	});
+	}); */
+	list.forEach((Integer t)->System.out.println(t));
 }
 }
