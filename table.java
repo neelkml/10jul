@@ -1,6 +1,6 @@
 package neel;
 
-public class table {
+ class table {
  void printTable(int n)
 {
 	for(int i=1;i<=10;i++)
@@ -41,7 +41,7 @@ synchronized void print(int n)
 	printTable(n);
 	displayTable(n);
 }
-}
+
 
 class Mythread1 extends Thread
 {
@@ -52,6 +52,7 @@ class Mythread1 extends Thread
 	public void run() {
 		t.printTable(5);
 	}
+}
 	class Mythread2 extends Thread
 	{
 		table t;
@@ -62,6 +63,7 @@ class Mythread1 extends Thread
 			t.printTable(100);
 		}
 	}
+
   class TestSync
 	{
 		public  void main(String args[]) {
